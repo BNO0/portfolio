@@ -1,14 +1,16 @@
 import { calculateSpan, DynamicTailwind } from "src/tailwindCSS/DynamicTailwind";
-import { ColorTheme, tailwindToRGB } from "src/tailwindCSS/ColorTheme";
+import { ColorTheme } from "src/tailwindCSS/ColorTheme";
+import { tailwindToRGB } from "src/functions/CalculateColor";
 export default function FormSequence(props) {
-  const { data } = props;
+  const { data, css } = props;
   const dataCount = data.datas.length;
   return (
-    <div className={`grid grid-cols-2 gap-4 m-10
+    <div className={`grid grid-cols-2 gap-4
       ${DynamicTailwind.mdGridCols[calculateSpan(dataCount, 3)]}
       ${DynamicTailwind.lgGridCols[calculateSpan(dataCount, 4)]}
       ${DynamicTailwind.xlGridCols[calculateSpan(dataCount, 5)]}
-      ${DynamicTailwind._2xlGridCols[calculateSpan(dataCount, 6)]}`
+      ${DynamicTailwind._2xlGridCols[calculateSpan(dataCount, 6)]}
+      ${css}`
     }>
       {data.datas.map((current, index)=>(
         <div key={current.title} className={`mt-5`}>

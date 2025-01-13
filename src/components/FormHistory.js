@@ -1,8 +1,8 @@
 import { ColorTheme } from "src/tailwindCSS/ColorTheme";
 export default function FormHistory(props) {
-  const { data } = props;
+  const { data, css } = props;
   return (
-    <div className={`grid grid-cols-8 gap-0 m-10`}>
+    <div className={`grid grid-cols-8 gap-0 ${css}`}>
       <h1 className={`col-span-8 text-5xl font-bold mb-5`}>{data.title}</h1>
       {data.datas.map((current, index)=>(
         <div key={current.title} className={`col-span-8 grid grid-cols-8 m-5`}>

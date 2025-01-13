@@ -1,9 +1,10 @@
-- [Title](#기회는-도전하는-자에게)
-- [교육](#교육)
-- [프로젝트](#프로젝트-및-경험)
-	- [The Knight](#the-knight)
-	- [rnmasterpiece](#rnmasterpiece)
-	- [인디라it](#인디라it)
+[✔Title](#기회는-도전하는-자에게)<br/>
+[👨‍🎓교육](#교육)<br/>
+[👨‍💻프로젝트](#프로젝트-및-경험)<br/>
+
+- [⚔The Knight](#the-knight)<br/>
+- [🔠rnmasterpiece](#rnmasterpiece)<br/>
+- [🎞인디라it](#인디라it)<br/>
 <br/><br/>
 
 # 기회는 도전하는 자에게
@@ -62,6 +63,7 @@ Javascript, Typescript, React, Redux, Java, Spring Boot, AWS, Docker 등<br/>
 
 ## The Knight
 
+- [✈Github - The Knight](https://github.com/BNO0/theknight)
 - 심리/전략 실시간 온라인 웹게임
 - Javascript, React, Redux, Websocket, SockJS
 
@@ -83,6 +85,7 @@ Javascript, Typescript, React, Redux, Java, Spring Boot, AWS, Docker 등<br/>
 
 ## rnmasterpiece
 
+- [✈Github - rnmasterpiece](https://github.com/BNO0/rnasterpiece)
 - 한글 NFT 발행 및 거래
 - Typescript, Web3JS, React, Redux
 
@@ -103,6 +106,7 @@ Javascript, Typescript, React, Redux, Java, Spring Boot, AWS, Docker 등<br/>
 
 ## 인디라it
 
+- [✈Github - 인디라it](https://github.com/BNO0/indierait)
 - 인디 공연/전시 홍보 플랫폼 서비스
 - Javascript, React
 

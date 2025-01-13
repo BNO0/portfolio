@@ -1,8 +1,7 @@
-import { ColorTheme, tailwindToRGB } from "src/tailwindCSS/ColorTheme";
 import {javascript, typescript, react, redux, java, springboot, aws, docker} from "src/data/SVG";
-import Project_2207_indierait, { indierait_detailPage } from "./Project_2207_indierait";
-import Project_2209_rnasterpiece, { rnasterpiece_detailPage }  from "./Project_2209_rnasterpiece";
-import Project_2211_TheKnight, { TheKnight_detailPage }  from "./Project_2211_TheKnight";
+import Project_2207_indierait, { DetailPage_2207_indierait } from "./Project_2207_indierait";
+import Project_2209_rnasterpiece, { DetailPage_2209_rnasterpiece }  from "./Project_2209_rnasterpiece";
+import Project_2211_TheKnight, { DetailPage_2211_TheKnight }  from "./Project_2211_TheKnight";
 const Data = {
   introduce: {
     title: "기회는 도전하는 자에게",
@@ -67,7 +66,15 @@ const Data = {
     다양한 기술을 학습하고 프로젝트에 적용했습니다.`,
     image: {
       type: "svg",
-      imgs: [javascript, typescript, react, redux, java, springboot, aws, docker,],
+      imgs: [
+        {key: "javascriptSVG", svg: javascript},
+        {key: "typescriptSVG", svg: typescript},
+        {key: "reactSVG", svg: react},
+        {key: "reduxSVG", svg: redux},
+        {key: "javaSVG", svg: java},
+        {key: "springbootSVG", svg: springboot},
+        {key: "awsSVG", svg: aws},
+        {key: "dockerSVG", svg: docker},],
     },
   },
   projects: [
@@ -76,9 +83,9 @@ const Data = {
     Project_2207_indierait,
   ],
   projectDetailPage: [
-    TheKnight_detailPage,
-    rnasterpiece_detailPage,
-    indierait_detailPage,
+    DetailPage_2211_TheKnight,
+    DetailPage_2209_rnasterpiece,
+    DetailPage_2207_indierait,
   ],
 };
 export default Data;

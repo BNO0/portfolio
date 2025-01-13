@@ -2,6 +2,8 @@ const ColorTheme = {
   // dark gray
   Base_bgColor: `bg-[#272525]`, //#272525
   Base_textColor: `text-white`, //#FFFFFF
+  Base_hover_bgColor: `hover:bg-white`, //#FFFFFF
+  Base_hover_textColor: `hover:text-[#272525]`, //#272525
 
   // dark blue
   bgColor1: `bg-[#18386b]`, //#18386b
@@ -16,16 +18,11 @@ const ColorTheme = {
   textColor2_2: `text-white`, //#FFFFFF
 
   // white blue
-  iconColor: `bg-[#C9E3FA]`,
-  iconColorRGB: `#C9E3FA`,
+  icon_bgColor: `bg-[#C9E3FA]`, //#C9E3FA
+  icon_textColor: `text-black`, //#000000
+  icon_hover_bgColor: `hover:bg-black`, //#000000
+  icon_hover_textColor: `hover:text-[#C9E3FA]`, //#C9E3FA
+  icon_hover_fill: `hover:fill-[#C9E3FA]`, //#C9E3FA
+  icon_bgColorRGB: `#C9E3FA`,
 }
-const calculateColor1 = (index, colors) => {
-  return colors[index%colors.length];
-}
-const calculateColor2 = (index, index2, colors) => {
-  const row = index%colors.length;
-  const column = index2%colors[row].length;
-  return colors[row][column];
-}
-const tailwindToRGB = (color)=>{return "#"+color.split("#")[1].substring(0,6);};
-export {ColorTheme, tailwindToRGB, calculateColor1, calculateColor2};
+export {ColorTheme};
